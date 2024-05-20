@@ -2,7 +2,7 @@ body{
     background: linear-gradient(
         180deg,
         rgba(255, 255, 153, 1) 0%,
-        rgba(0, 153, 153, 50) 100%
+        rgba(0, 153, 153, 50) 60%
       );
 }
 .scoreboard{
@@ -12,7 +12,7 @@ body{
 }
 .wins,.loss,.draw, span{
     display: inline-flex;
-    color: rgb(230, 230, 230);
+    color: red;
     font-size: 20px;
     width: 15%;
     justify-content: center;
