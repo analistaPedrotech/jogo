@@ -1,47 +1,51 @@
-<DOCTYPE html>
-    <html>
-    <head lang="pt">
-        <link rel="stylesheet" type="text/css" href="estilo.css"/>   
-        </head>
-    <body>
-            <div id="jogo">
-                <button id="buttonIA">MAQUINA: OFF</button>
-                <div class="linha">
-                    <div class="casa" id="casa1"></div>
-                    <div class="casa" id="casa2"></div>
-                    <div class="casa" id="casa3"></div>
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css"/>   
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <div id="jogo">
+                    <button id="buttonIA">MAQUINA: OFF</button>
+                    <div class="linha">
+                        <div class="casa" id="casa1"></div>
+                        <div class="casa" id="casa2"></div>
+                        <div class="casa" id="casa3"></div>
+                    </div>
+                    <div class="linha">
+                        <div class="casa" id="casa4"></div>
+                        <div class="casa" id="casa5"></div>
+                        <div class="casa" id="casa6"></div>
+                    </div>
+                    <div class="linha">
+                        <div class="casa" id="casa7"></div>
+                        <div class="casa" id="casa8"></div>
+                        <div class="casa" id="casa9"></div>
+                    </div>
+                    <div id="resultado">JOGO BUCHA</div>
+                    <div class="scoreboard">
+                        <span class="wins">WINS:</span>
+                        <div class="wins" id="score-win"></div>
+                        <span class="loss">LOSS:</span>
+                        <div class="loss" id="score-loss"></div>
+                        <span>DRAW:</span>
+                        <div class="draw" id="score-draw"></div>
+                    </div>
+                    <button id="button" hidden>RESTART</button>
                 </div>
-                <div class="linha">
-                    <div class="casa" id="casa4"></div>
-                    <div class="casa" id="casa5"></div>
-                    <div class="casa" id="casa6"></div>
+            </td>
+            <td>
+                <div class="author">
+                    <iframe src="perfil.png" width="400px" height="630px"></iframe>
                 </div>
-                <div class="linha">
-                    <div class="casa" id="casa7"></div>
-                    <div class="casa" id="casa8"></div>
-                    <div class="casa" id="casa9"></div>
-                </div>
-                <div id="resultado">JOGO BUXA</div>
-                <div class="scoreboard">
-                    <span class="wins">WINS:</span>
-                    <div class="wins" id="score-win"></div>
-                    <span class="loss">LOSS:</span>
-                    <div class="loss" id="score-loss"></div>
-                    <span>DRAW:</span>
-                    <div class="draw" id="score-draw"></div>
-                </div>
-                <button id="button" hidden>RESTART</button>
-                
-                
-                
-            </div>
-            <div class="author">
-            </div>
-            
-    
-            <script src="functions.js"></script>
-    </body>
-    </html>
-    
-    
-    
+            </td>
+        </tr>
+    </table>
+    <script src="functions.js"></script>
+</body>
+</html>
